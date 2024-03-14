@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/index.css" />
+    <title>todo app</title>
+  </head>
+  <body>
+    <div style="margin-inline: 80px; margin-top: 40px">
+      <a href="/" style="margin-bottom: 20px">Back</a>
+
+      <h2 class="color-blue"><%= note.title %></h2>
+
+      <p><%= note.contents %>...</p>
+
+      <form
+        style="margin-top: 20px"
+        action="/<%= note.id %>/delete"
+        method="post"
+      >
+        <button type="submit">delete note</button>
+      </form>
+    </div>
+  </body>
+</html>

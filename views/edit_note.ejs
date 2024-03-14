@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/index.css" />
+    <title>edit note</title>
+  </head>
+  <body>
+    <div style="margin-inline: 80px; margin-top: 40px">
+      <a href="/" style="margin-bottom: 20px">Back</a>
+
+      <form
+        action="/<%= note.id %>/edit"
+        method="post"
+        style="margin-top: 20px"
+      >
+        <label for="title">Title:</label>
+        <input
+          type="text"
+          name="title"
+          id="title"
+          value="<%= note.title %>"
+        /><br />
+        <label for="content">Content:</label>
+        <textarea name="contents" id="content" cols="10" rows="6">
+<%= note.contents %></textarea
+        ><br />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>

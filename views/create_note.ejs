@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/index.css" />
+    <title>create note</title>
+  </head>
+  <body>
+    <div style="padding-inline: 20px; padding-top: 20px">
+      <a href="/">Back</a>
+
+      <h2>Create note</h2>
+      <form action="/" method="post">
+        <label for="titleInput">Title</label>
+        <input type="text" id="titleInput" name="title" />
+
+        <label for="contentsInput">Content</label>
+        <textarea
+          name="contents"
+          id="contentsInput"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <button type="submit">Create a note</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/index.css" />
+    <title>Notes app, 00017747</title>
+  </head>
+  <body>
+    <div class="card title color">
+      <header class="content"><h1>Notes app, 00017747</h1></header>
+    </div>
+
+    <div class="card infogrid">
+      <section class="content">
+        <div class="content1">
+          <form action="/">
+            <input
+              type="text"
+              id="searchInput"
+              name="search"
+              placeholder="Search"
+            />
+
+            <button style="margin-bottom: 20px">Search</button>
+          </form>
+
+          <ul>
+            <% notes.forEach(note => {%>
+            <li style="padding-bottom: 20px">
+              <h3><%= note.title %></h3>
+              <p><%= note.contents.substring(0, 60) %>...</p>
+              <a style="margin-right: 10px" href="/<%= note.id %>">View more</a>
+              <a href="/editNote/<%= note.id %>">Edit note</a>
+            </li>
+            <% }); %>
+          </ul>
+
+          <form action="/createNote">
+            <button>Create a new note</button>
+          </form>
+          <footer>
+            <p>
+              Note: This web application was created to fulfill Web Technology
+              module’s requirements and does not represent an actual company or
+              service
+            </p>
+          </footer>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
