@@ -30,3 +30,7 @@ Also, I implemented search functionality on the app.
 (<img width="735" alt="Screenshot 2024-03-14 at 22 57 56" src="https://github.com/wiut17747/00017747_wt/assets/145759300/6e407bf9-22e7-49a9-a322-4ad5656a0f7b">)
 
 - (https://github.com/wiut17747/00017747_wt)
+
+## Deployment
+
+I tried all the deployment platforms (Netlify, Vercel, Render, Glitch) but for some reason I couldn't deploy it, maybe the issues on their side or mine but can't seem to wrap my head around it. 2 times Render messed up my app so I have to rebuild it 2 times, 2 times so I gave up. I tried to follow seminar tutorial on how to deploy the app but AWS asked for credit card for deploying and I don't have one so. Thank you!
